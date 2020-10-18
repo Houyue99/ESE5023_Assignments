@@ -1,0 +1,27 @@
+Find_expression <- function(x){
+  library(gtools)
+  Insert <- c("+","-"," ")
+  Value_all <- permutations(3,8,Insert,repeats.allowed=TRUE)
+  Value_all1 <- rep(1,6561)  #3^8=6561
+  Value_all2 <- c()
+  j = 1
+  for (ii in 1:6561) {
+    for (jj in 1:8) {
+      if(Value_all[ii,jj] != " "){
+        Value_all1[j] = paste0(Value_all1[j],Value_all[ii,jj],jj+1)
+      }
+      else{
+        Value_all1[j] = paste0(Value_all1[j],jj+1)
+      }
+    }
+    j = j+1  
+  }
+  for (k in 1:6561) {
+    Value_all2[k] = eval(parse(text=Value_all1[k]))
+  }
+  for (kk in 1:6561) {
+    if(Value_all2[kk] == x){
+      print(Value_all1[kk])
+    }
+  }
+}
