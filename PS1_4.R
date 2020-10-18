@@ -16,3 +16,4 @@ Least_moves <- function(x){
   }
   print(i)
 }
+#good work
