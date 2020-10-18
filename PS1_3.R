@@ -9,7 +9,7 @@ Pascal_triangle <- function(k){
   else if (k==2){
     print(line2)
   }
-  
+  # actually, there is no need for discussing the situation of k==1 &k==2 separately
   else{
     lineiq<-line2
     for (i in 3:k){
