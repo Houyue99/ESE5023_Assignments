@@ -10,11 +10,11 @@ Whole_Data1 %>%
          month=substr(DATE,1,7),
          speed=as.numeric(substr(WND,9,12)),
          speed1=0.1*speed,
+         #good work for handling the scaling factor 10 
          speed_code=as.numeric(substr(WND,14,14))) %>%
   filter(speed!=9999 & speed_code==1) %>%
   group_by(month) %>%
   summarise(date1=date[1],mean_speed=mean(speed1)) %>%
   ggplot(aes(x=date1, y=mean_speed)) +
   geom_line()
-  
-  
+# good work
