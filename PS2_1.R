@@ -46,4 +46,6 @@ for (country in unique(Sig_Eqs$COUNTRY)){
 }
 the_world2 <- as_tibble(the_world)
 arrange(the_world2,desc(eq_of_country))
+# good work
+
 
