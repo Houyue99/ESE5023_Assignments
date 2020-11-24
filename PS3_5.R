@@ -16,6 +16,11 @@ plot(Distance~Velocity,
 #Problem5.2
 fit <- lm(Distance ~ Velocity)
 abline(fit, lwd = 5, col = "red")
+# MingYANG noticed:
+# your intercept should be set to be zero if you want to use the Big Bang thery to evaluate the age of the universe
+# some additional works should do for changing magaparsecs into years
+# so you got the wrong answer!
+# the end
 
 #Problem5.3
 Velocity2 <- Velocity*3.15e+7
