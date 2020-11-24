@@ -22,3 +22,8 @@ plot(cpus_test$perf,perf_predict,
 mean_bias <- (mean(perf_predict) - mean(cpus_test$perf))/
   mean(cpus_test$perf)*100
 print(mean_bias)
+
+# MingYANG noticed:
+# if you used percentage bias you should explain it in your report
+# and I think "mean(perf_predict - cpus_test$perf)" is more suitable for this problem
+# the end
