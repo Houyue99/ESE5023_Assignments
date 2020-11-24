@@ -13,3 +13,5 @@ plot(Temperature ~ Elevation,
      col = "grey")
 abline(fit, lwd = 5, col = "red")
 points(mean(Elevation), mean(Temperature), pch = "+", cex = 3)
+
+# good work
