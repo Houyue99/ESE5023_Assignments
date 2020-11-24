@@ -18,3 +18,18 @@ zinclevel2 %>%
 anova_one_way <- aov(zinc ~ vegetarians_or_non, data = zinclevel2)
 summary(anova_one_way)
 
+# MingYANG recommended：
+# try my code:
+preveg<-"initiate"
+preveg[1:6]<-"pregnveg"
+preveg[7:18]<-"pregveg"
+preveg[19:23]<-"uprgveg"
+zinc <- c(185,189,187,181,150,176,171,174,202,171,207,125,189,179,163,174,184,186,210,139,172,198,177)
+prevegdata<-cbind(preveg,zinc)
+data_tbl <- as_tibble(prevegdata)
+datatbl <- data_tbl %>% 
+  filter(preveg != "uprgveg")
+
+anova_one_way <- aov(zinc ~ preveg, data = datatbl)
+summary(anova_one_way)
+# the end
