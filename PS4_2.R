@@ -38,3 +38,7 @@ months_in_plot   <- 10
 forecast_15days <- forecast(model, months_forecast)
 plot(forecast(model, months_forecast), include = months_in_plot, xlab="Time", 
      ylab="monthly_temperature",type="o",lwd=2) 
+# MingYANG noticed:
+# good work 
+# but some necessary explainations for your assignment and plot were missing
+# the end
