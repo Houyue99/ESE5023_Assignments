@@ -99,3 +99,7 @@ title(main=paste("Long term (1800-2020) mean surface temperature in Jul."),
       cex.main=1,font.main=2)
 map('world',add=T,lwd=0.75,col="black")
 box(lwd=2)
+
+# MingYANG noticed:
+# time series and histogram are too simple. Actually it should be 1 point according to what Prof. ZHU have listed in the assignment
+# the end
