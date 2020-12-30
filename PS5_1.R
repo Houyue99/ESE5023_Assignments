@@ -70,3 +70,4 @@ contour(prec_crop2, add=T,levels=25,col="red")
 plot(srad_crop2,col=col,main="Solar radiation contourf")
 contour(srad_crop2, add=T,levels=17000,col="red")
 
+# good work
