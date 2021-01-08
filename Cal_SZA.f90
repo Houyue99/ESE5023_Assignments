@@ -55,3 +55,5 @@ sza=90-saa
 write(*,*)"The zenith angle(SZA) is:",sza
 
 end program Cal_SZA
+
+! good work 
