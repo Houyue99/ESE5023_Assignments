@@ -35,7 +35,7 @@ close(w)
 end program Main
 
 ! MingYANG noticed:
-! (1) in this question, M and N are in 4×3 and 3×3 
+! (1) in this question, M and N are in 4×3 and 3×3, so the result should be 4×3
 ! (2) using "matmul" can`t get the right answer
 ! for M=[9.4889891 15.79952 9.2889578
 !        9.2889578 12.92396 5.8621211
