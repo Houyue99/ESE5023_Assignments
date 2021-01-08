@@ -25,3 +25,5 @@ temp = (n+284)*2*pi/365
 decangle = 23.45*sin(temp)
 end function decangle
 end module Declination_angle
+
+! GOOD WORK
