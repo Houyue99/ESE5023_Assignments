@@ -46,3 +46,5 @@ print*,"ET =",et
 print*,"LSTM =",lstm
 end function astime
 end module AST
+
+! good work
